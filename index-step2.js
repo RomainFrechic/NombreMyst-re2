@@ -8,20 +8,24 @@ function pied(){
 	function clickValider(){
 		$("button").click(function(){
 			var clickInput = $('#input').val();
-			if(clickInput == 15){
+			var aleatoire = Math.floor(Math.random()*10);
+			console.log(Math);
+
+
+			if(clickInput == aleatoire){
 				alert("YOU WIN");
 			}
 			else{
 				alert("YOU LOOSE");
 			}
-		
 		});
-
 	}
 
 
+
+
 		clickValider();
-		
+
 		// Récupérer le contenu de mon input
 
 		// Stocker un nombre ENTIER généré "aléatoirement"
@@ -46,5 +50,4 @@ function pied(){
 
 
 }
-
 //
