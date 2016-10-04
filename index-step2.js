@@ -6,27 +6,34 @@ function pied(){
 	// == Fonction clickValider == 
 	// Créer la fonction 'clickValider'
 	function clickValider(){
-		$("button").click(function(){
+		
 			var clickInput = $('#input').val();
-			var aleatoire = Math.floor(Math.random()*10);
-			console.log(Math);
+
+			
+			var aleatoire = Math.round(Math.random()*5-0.5);
+			console.log(aleatoire);
+
 
 
 			if(clickInput == aleatoire){
 				alert("YOU WIN");
 			}
-			else{
-				alert("YOU LOOSE");
+			else if (clickInput < aleatoire){
+				alert("perdu, le nombre est plus petit");
 			}
-		});
+			 else{
+			 	alert("perdu, la nombre est plus grand");
+			 }
+			
+		
 	}
 
 
-
+$("button").click(function(){
 
 		clickValider();
 
-		// Récupérer le contenu de mon input
+});		// Récupérer le contenu de mon input
 
 		// Stocker un nombre ENTIER généré "aléatoirement"
 
@@ -50,4 +57,3 @@ function pied(){
 
 
 }
-//
