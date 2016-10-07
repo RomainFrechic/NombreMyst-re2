@@ -1,10 +1,8 @@
 $(document).ready(pied);
 
-// Fonction principale
+
 function pied(){
 
-	// == Fonction clickValider == 
-	// Créer la fonction 'clickValider'
 	function clickValider(){
 		
 		var clickInput = $('#input').val();
@@ -14,7 +12,7 @@ function pied(){
 		console.log(aleatoire);
 
 // Cette ligne génère aléatoirement un nombre entre 1 et 100		
-var proposition = Number(prompt("Saisir un nombre entre 1 et 100 :"))
+var proposition = Number(prompt("Saisir un nombre entre 1 et 100 :"));
 
 for (var i = 1; i < 6; i++) 
 {
@@ -63,34 +61,13 @@ if (i >= 6) {
 };	
 
 $("button").click(function(){
-	//votre code
 	$("button").click(function(){
 		$("#input").text();
 	});
 
 	clickValider();
 
-});		// Récupérer le contenu de mon input
-
-		// Stocker un nombre ENTIER généré "aléatoirement"
-
-		// Comparer ce contenu à ce nombre
-			// Si le contenu est égal
-			// Afficher une alert Gagné
-
-			// Sinon s'il est supérieur
-			// Afficher une alert Perdu, votre nombre est trop grand
-
-			// Sinon s'il est inférieur
-			// Afficher une alert Perdu, votre nombre est trop petit
-			
-			
-	// /Fin == Fonction clickValider == 
-
-
-
-	// Ecrire le code qui va détecter que le bouton 'valider' est cliqué.
-	// Et qui appelle la fonction 'clickValider' défini ci-dessus
+});		
 
 
 }
